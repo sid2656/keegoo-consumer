@@ -1,10 +1,12 @@
-package com.keegoo.consumer.utils;
+package com.keegoo.consumer;
 
 import java.util.Properties;
 
+import com.keegoo.consumer.utils.PropertiesUtil;
 
 
-public class InitMessage {
+
+public class InitConsumer {
 	
 	/**
 	 * 系统根目录

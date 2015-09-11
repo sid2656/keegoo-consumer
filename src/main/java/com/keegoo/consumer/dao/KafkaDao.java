@@ -14,6 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import com.keegoo.consumer.InitConsumer;
+
 /**
  * ClassName:Kafka
  * Reason:	 kafka消息处理类. 
@@ -28,11 +30,15 @@ public class KafkaDao implements MessageDao {
 
 	public String pullGroup(String groupid,String msgId) {
 		//TODO 具体获取消息的实现
+		String group = InitConsumer.application.getProperty("consumer.url.group");
+		logger.debug("pullGroup 地址："+group);
 		return null;
 	}
 	
 	public String pullSole(String msgId) {
 		//TODO 具体获取消息的实现
+		String sole = InitConsumer.application.getProperty("consumer.url.sole");
+		logger.debug("pullSole 地址："+sole);
 		return null;
 	}
 
